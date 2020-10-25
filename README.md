@@ -1,2 +1,2 @@
-# BDR
-An str Encrypter (PHP)
+# BDR Project
+
