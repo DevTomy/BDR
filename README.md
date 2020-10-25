@@ -25,8 +25,8 @@ As Simple Lib for encode / decode & hashing ( Exclusive Algorithm ):<br>
     echo $bdr->decode('|33|16|35|39|55|16|24|64|'); // |33|16|35|39|55|16|24|64| => Hello
     ?>
 
-## Contact Us : 
-
-  - Telegram : @DinoSoft / @DevTomy
+## Contact Us & License: 
+  - Encode & Decode By: @aryantdot
+  - Hash Algorithm & Lib By : @DevTomy
   - instagram : instagram.com/DinoSoft.ir
   - WebSite : https://DinoSoft.ir
