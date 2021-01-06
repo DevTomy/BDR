@@ -1,0 +1,23 @@
+#!/bin/bash
+
+function usage {
+  echo "Usage:" 
+  echo "$ bdr encode \"YOUR STRING\""
+  echo "$ bdr decode \"ENCODED STRING\""
+}
+
+function encode {
+  curl -ss -N -X POST -F "type=encode" -F "str=$1" https://dinosoft.ir/BDR/api.php | jq .encoded
+}
+
+function decode {
+  curl -ss -N -X POST -F "type=decode" -F "str=$1" https://dinosoft.ir/BDR/api.php | jq .decoded
+}
+
+if [ "encode" = "$1" ]; then
+  encode "$2"
+elif [ "decode" = "$1" ]; then
+  decode "$2"
+else
+  usage
+fi
