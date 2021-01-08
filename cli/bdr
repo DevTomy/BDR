@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if ! command -v jq &> /dev/null
+then
+  echo "Make sure you've installed \"jq\" package!"
+  echo "Debian/Ubuntu...: sudo apt install jq"
+  echo "Arch/Manjaro...: sudo pacman -Sy jq"
+  exit
+fi
+
 function usage {
   echo "Usage:" 
   echo "$ bdr encode \"YOUR STRING\""
