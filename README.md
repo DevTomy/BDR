@@ -37,6 +37,7 @@ Run commands below in your terminal
 ```bash
 $ git clone https://github.com/DevTomy/BDR 
 $ cd BDR/cli
+$ chmod +x bdr
 $ cp bdr ~/.local/bin/
 ```
 
